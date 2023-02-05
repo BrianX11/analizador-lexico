@@ -53,6 +53,6 @@ def analyzer(input):
                 temp = ""
             elif((temp[0]=="\"" or temp[0]=="\'") and re.search(get_pattern(regex_patterns, 'string'), temp)):
                 print("String: %s" % temp)
-                temp = ""
+                temp = ""  
 
-analyzer('if(a==3){ i=a*1 }')
+analyzer('a="hola"')
